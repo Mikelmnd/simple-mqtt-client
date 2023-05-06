@@ -15,7 +15,7 @@ public class SimpleMqttClient implements MqttCallback {
     MqttConnectOptions connOpt;
     static final String M2MIO_THING = UUID.randomUUID().toString();
     static final String BROKER_URL = "tcp://test.mosquitto.org:1883";
-    static final Boolean subscriber = true;
+    static final Boolean subscriber = false;
     static final Boolean publisher = true;
     private Random rnd = new Random();
     private static final Logger log = LoggerFactory.getLogger(SimpleMqttClient.class);
